@@ -9,8 +9,8 @@ const REGEX_EVENT: &'static str =
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct CompetitionEvent {
-    id1: u32,
-    id2: u32
+    pub id1: u32,
+    pub id2: u32
 }
 
 pub fn parse(html: Html) -> anyhow::Result<Vec<CompetitionEvent>> {
